@@ -1,0 +1,17 @@
+{"list": [
+  {
+    "id": "7.0.42",
+    "name": "Tomcat 7.0.42",
+    "url": "http://archive.apache.org/dist/tomcat/tomcat-7/v7.0.42/bin/apache-tomcat-7.0.42.zip"
+  },
+  {
+    "id": "7.0.41",
+    "name": "Tomcat 7.0.41",
+    "url": "http://archive.apache.org/dist/tomcat/tomcat-7/v7.0.41/bin/apache-tomcat-7.0.41.zip"
+  },
+  {
+    "id": "7.0.40",
+    "name": "Tomcat 7.0.40",
+    "url": "http://archive.apache.org/dist/tomcat/tomcat-7/v7.0.40/bin/apache-tomcat-7.0.40.zip"
+  },
+]}

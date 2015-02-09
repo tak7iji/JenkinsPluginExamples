@@ -1,0 +1,11 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:i="jelly:fmt">
+    <l:layout norefresh="true" title="Test Page">
+        <st:include it="${it.owner}" page="sidepanel.jelly" />
+        <l:main-panel>
+            Sub Action(${it.hashCode()})<br/>
+            <a href="sub2">Sub Action2</a><br/>
+        </l:main-panel>
+    </l:layout>
+</j:jelly>

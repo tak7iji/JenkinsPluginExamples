@@ -1,0 +1,20 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:f="/lib/form" xmlns:l="/lib/layout">
+    <st:include page="configure-common.jelly"/>
+
+    <f:section title="Tset">
+        <f:entry title="Test">
+            <f:textbox name="test" value="${it.test}"/>
+        </f:entry>
+    </f:section>
+
+    <f:block>
+        <j:set var="descriptor" value="${it.getDescriptorByName('HelloWorldBuilder')}"/>
+        <j:set var="instance" value="${it.getBuildersList().get(descriptor)}"/>
+        <div name="${descriptor.jsonSafeClassName}" descriptorId="${descriptor.id}">
+            <table style="width:100%">
+                <st:include from="${descriptor}" page="${descriptor.configPage}" optional="true"/>
+            </table>
+        </div>
+    </f:block>
+</j:jelly>

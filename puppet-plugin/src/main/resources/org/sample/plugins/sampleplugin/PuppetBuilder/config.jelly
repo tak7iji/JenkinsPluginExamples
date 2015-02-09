@@ -1,0 +1,44 @@
+<j:jelly xmlns:j="jelly:core"
+         xmlns:f="/lib/form">
+    <f:section title="${%execFileOrManifest}">
+        <f:radioBlock name="execMode" value="FILE" title="${%execFile}" checked="${instance.execType=='FILE'}">
+            <f:nested>
+                <f:entry title="File" field="file">
+                    <f:textbox/>
+                </f:entry>
+            </f:nested>
+        </f:radioBlock>
+        <f:radioBlock name="execMode" value="MANIFEST" title="${%execManifest}" checked="${instance.execType=='MANIFEST'}">
+            <f:nested>
+                <f:entry title="Manifest" field="manifest">
+                    <f:textarea/>
+                </f:entry>
+            </f:nested>
+        </f:radioBlock>
+    </f:section>
+    <f:section title="Select installations">
+        <f:entry title="${%puppetInstallation}" field="puppetInstallationName">
+            <f:select/>
+        </f:entry>
+        <f:entry title="${%facterInstallation}" field="facterInstallationName">
+            <f:select/>
+        </f:entry>
+    </f:section>
+    <f:advanced>
+        <f:entry title="${%rubyPath}" field="rubyPath">
+            <f:textbox/>
+        </f:entry>
+        <f:entry title="${%modulePath}" field="modulePath">
+            <f:textbox/>
+        </f:entry>
+        <f:entry title="${%debug}" field="debug">
+            <f:checkbox/>
+        </f:entry>
+        <f:entry title="${%testOnly}" field="noop">
+            <f:checkbox/>
+        </f:entry>
+        <f:entry title="${%enableColor}" field="color">
+            <f:checkbox/>
+        </f:entry>
+    </f:advanced>
+</j:jelly>

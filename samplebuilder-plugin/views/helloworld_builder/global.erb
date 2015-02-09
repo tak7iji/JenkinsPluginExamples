@@ -1,0 +1,8 @@
+<%
+  f = taglib("/lib/form")
+  f.section(:title => "HelloWorld Plugin") do
+    f.entry(:title => "Global Name", :field => "gname") do
+      f.textbox :value => "#{instance.gname}"
+    end
+  end
+%>

@@ -1,0 +1,11 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <f:entry title="${%name}" field="name">
+        <f:textbox/>
+    </f:entry>
+    <f:optionalBlock title="${%sample}" name="block" checked="${instance.block!=null}">
+        <f:entry title="text" field="text">
+            <f:textbox />
+        </f:entry>
+    </f:optionalBlock>
+</j:jelly>

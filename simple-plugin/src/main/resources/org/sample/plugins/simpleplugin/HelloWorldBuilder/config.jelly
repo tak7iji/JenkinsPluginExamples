@@ -1,0 +1,11 @@
+<j:jelly xmlns:j="jelly:core"
+         xmlns:f="/lib/form">
+    <f:entry title="Name" field="name" >
+        <f:textbox/>
+    </f:entry>
+    <f:optionalBlock title="Block Sample" name="block" checked="${instance.block!=null}">
+        <f:entry title="text" field="text">
+            <f:textbox />
+        </f:entry>
+    </f:optionalBlock>
+</j:jelly>

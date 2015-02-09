@@ -1,0 +1,17 @@
+{"list": [
+  {
+    "id": "1.7.3",
+    "name": "Facter 1.7.3",
+    "url": "http://downloads.puppetlabs.com/facter/facter-1.7.3.tar.gz"
+  },
+  {
+    "id": "1.6.11",
+    "name": "Facter 1.6.11",
+    "url": "http://downloads.puppetlabs.com/facter/facter-1.6.11.tar.gz"
+  },
+  {
+    "id": "1.5.1",
+    "name": "Facter 1.5.1",
+    "url": "http://downloads.puppetlabs.com/facter/facter-1.5.1.tgz"
+  },
+]}

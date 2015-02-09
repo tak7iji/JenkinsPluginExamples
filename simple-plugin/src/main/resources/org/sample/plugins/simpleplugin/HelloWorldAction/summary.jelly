@@ -1,0 +1,7 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"
+         xmlns:t="/lib/hudson">
+    <t:summary icon="/plugin/simple-plugin/icons/france.png">
+        ${it.message}
+    </t:summary>
+</j:jelly>

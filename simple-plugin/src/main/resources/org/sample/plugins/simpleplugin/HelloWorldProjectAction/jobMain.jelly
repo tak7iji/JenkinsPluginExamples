@@ -1,0 +1,9 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core"
+         xmlns:t="/lib/hudson">
+    <table style="margin-top: 1em; margin-left:1em;">
+        <t:summary icon="/plugin/simple-plugin/icons/france.png">
+            <a href="${it.getUrlName()}">Link</a>
+        </t:summary>
+    </table>
+</j:jelly>

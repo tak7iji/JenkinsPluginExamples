@@ -1,0 +1,17 @@
+{"list": [
+  {
+    "id": "3.3.0",
+    "name": "Puppet 3.3.0",
+    "url": "http://downloads.puppetlabs.com/puppet/puppet-3.3.0.tar.gz"
+  },
+  {
+    "id": "3.2.4",
+    "name": "Puppet 3.2.4",
+    "url": "http://downloads.puppetlabs.com/puppet/puppet-3.2.4.tar.gz"
+  },
+  {
+    "id": "2.7.23",
+    "name": "Puppet 2.7.23",
+    "url": "http://downloads.puppetlabs.com/puppet/puppet-2.7.23.tar.gz"
+  },
+]}

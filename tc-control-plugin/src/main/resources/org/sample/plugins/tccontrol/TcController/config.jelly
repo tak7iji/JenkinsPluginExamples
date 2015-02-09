@@ -1,0 +1,24 @@
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
+    <f:entry title="Tc Installation" field="tcInstallationName">
+        <f:select/>
+    </f:entry>
+    <f:advanced>
+        <f:entry title="JAVA_OPTS" field="javaOpts">
+            <f:textbox/>
+        </f:entry>
+        <f:entry title="CATALINA_OPTS" field="catalinaOpts">
+            <f:textbox/>
+        </f:entry>
+        <f:optionalBlock title="Change Server Port" name="serverPort" checked="${instance.serverPort!=null}">
+            <f:entry title="SHUTDOWN Port" field="shutdownPort">
+                <f:textbox/>
+            </f:entry>
+            <f:entry title="HTTP Port" field="httpPort">
+                <f:textbox/>
+            </f:entry>
+            <f:entry title="AJP Port" field="ajpPort">
+                <f:textbox/>
+            </f:entry>
+        </f:optionalBlock>
+    </f:advanced>
+</j:jelly>

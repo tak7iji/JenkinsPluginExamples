@@ -1,0 +1,15 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:i="jelly:fmt">
+    <l:side-panel>
+        <p>
+            <a href="../../">Back</a>
+        </p>
+        <p>
+            <a href="configure">Configure</a><br/>
+        </p>
+        <p>
+            <a href="delete">Delete</a><br/>
+        </p>
+    </l:side-panel>
+</j:jelly>

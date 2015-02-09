@@ -1,0 +1,6 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:f="/lib/form" xmlns:l="/lib/layout">
+    <st:include page="configure-common.jelly"/>
+
+    <st:include page="config-foods.jelly"/>
+</j:jelly>
